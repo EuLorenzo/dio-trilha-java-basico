@@ -12,6 +12,7 @@ public class ContaTerminal {
     }
 
     public int getNumber(){
+        Integer.toString(number);
         return this.number;
     }
 
@@ -39,8 +40,6 @@ public class ContaTerminal {
     }
 
     public float getCash(){
-    
-    
         return this.cash;
     }
 

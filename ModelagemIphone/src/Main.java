@@ -49,7 +49,10 @@ public class Main {
             case 2 -> musicPlayer.stopMusic();
             case 3 -> {
                 System.out.print("Digite o nome do musica: ");
-                String music = s.next();
+                //Utilizado aqui para limpar o /n do buffer
+                //Sem isto, o código não pega a linha
+                s.nextLine();
+                String music = s.nextLine();
                 musicPlayer.selectMusic(music);
             }
             case 4 -> musicPlayer.getCurrentMusic();
@@ -71,7 +74,9 @@ public class Main {
             case 2 -> safari.addNewTab();
             case 3 -> {
                 System.out.print("Qual site, deseja abrir: ");
-                String site = s.next();
+                //Mesma coisa que na linha 52 ....
+                s.nextLine();
+                String site = s.nextLine();
                 safari.openPage(site);
             }
             default -> throw new DoNotMatchException("Essa opção não existe");
@@ -91,7 +96,9 @@ public class Main {
             case 2 -> telephoneDevice.answer();
             case 3 -> {
                 System.out.print("Número à ligar: ");
-                String number = s.next();
+                //O mesmo que na linha 52 ....
+                s.nextLine();
+                String number = s.nextLine();
                 telephoneDevice.call(number);
             }
             default -> throw new DoNotMatchException("Essa opção não existe");

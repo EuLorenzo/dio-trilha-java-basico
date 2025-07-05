@@ -19,12 +19,18 @@ Durante a trilha, foram abordados os seguintes tópicos fundamentais:
 
 - `ContaTerminal`: Simulação de cadastro de conta bancária via terminal, utilizando leitura com `Scanner` e manipulação de atributos.
 
+
+- `ContadorFluxo`: Simulação de contador numérico com validação, utilizando leitura via `Scanner` e exceção personalizada (`ValidatorException`). 
+
+
+- `Modelagem Iphone`: Simulação de aplicativos básicos do Iphone ( Itunes, Safari, VoiceMail ), utilizando `Scanner`, `Exceptions`, `Interfaces` e `Diagramas UML`.
+
 Outros projetos serão adicionados conforme o avanço na trilha.
 
 ## 🛠 Tecnologias
 
 - Java 21+
-- IDE: VSCode
+- IDE: VSCode, IntelliJ
 - JDK configurado localmente
 
 ## 🚀 Como executar
